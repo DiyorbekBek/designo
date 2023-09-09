@@ -1,0 +1,33 @@
+.header {
+  padding: 6.5rem 0;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo-img {
+  transition: 0.3s ease;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.sitenav {
+  margin-left: auto;
+}
+.sitenav__list {
+  display: flex;
+  align-items: center;
+  gap: 4.2rem;
+}
+
+.sitenav__link {
+  @include fontStetting(1.4rem, 1.4rem, 400, 2px);
+  color: $secondary-dark-grey-color;
+  font-style: normal;
+  &:hover {
+    text-decoration: underline;
+  }
+}

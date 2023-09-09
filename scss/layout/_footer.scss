@@ -1,0 +1,88 @@
+.footer {
+  background-color: $primary-black-color;
+}
+.footer-container {
+  padding-top: 14rem;
+}
+
+.footer-navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav {
+  margin-bottom: 4rem;
+}
+
+.fiiter-list {
+  display: flex;
+  gap: 4.2rem;
+}
+
+.footer-item-link {
+  @include fontStetting(1.4rem, 1.4rem, 400, 2px);
+  color: $primary-white-color;
+  font-style: normal;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer-contact {
+  display: flex;
+  padding-top: 3.1rem;
+  padding-bottom: 7.2rem;
+}
+
+.footer-contact-list {
+  display: flex;
+  gap: 30px;
+  margin-right: auto;
+}
+
+.footer-contact-item {
+  width: 350px;
+  @include fontStetting(1.6rem, 1.62, 700, normal);
+  color: $primary-white-color;
+  opacity: 0.5;
+  font-style: normal;
+  a {
+    color: $primary-white-color;
+    opacity: 0.5;
+    font-style: normal;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  p {
+    color: $primary-white-color;
+    opacity: 0.5;
+    font-style: normal;
+  }
+}
+
+.footer-tel-link {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.footer-email-link {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.pages-site {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.fa-brands {
+  color: $primary-peach-color;
+  cursor: pointer;
+  transition: 0.3s ease;
+  &:hover {
+    color: $secondary-light-peach-color;
+  }
+}
