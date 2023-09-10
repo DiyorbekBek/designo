@@ -1,0 +1,124 @@
+// BG-TOP START
+
+.bg-top-container {
+  background-image: url(../../images/svg/bg-top-right-bottom.svg),
+    url(../../images/svg/bg-top-right-top.svg),
+    url(../../images/svg/bg-top-right-c-bottom.svg),
+    url(../../images/svg/bg-top-right-c-top.svg),
+    url(../../images/svg/bg-top-c-top.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom, right top, bottom right 292px,
+    top right 292px, top left 335px;
+  height: 292px;
+  border-radius: 1.5rem;
+  background-color: $primary-peach-color;
+}
+
+.bg-top-content {
+  text-align: center;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  h1 {
+    color: $primary-white-color;
+    margin-bottom: 2.4rem;
+  }
+  p {
+    color: $primary-white-color;
+  }
+}
+// BG-TOP END
+// WEB-FEATURES START
+.web__features {
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+}
+
+.web-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.web-item {
+  width: 350px;
+}
+
+.web-item-link {
+  width: 100%;
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+  text-align: center;
+  background-color: #fdf3f0;
+  color: $primary-peach-color;
+  transition: 0.3s ease;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  p {
+    width: 100%;
+    color: $primary-black-color;
+    &:hover {
+      color: $primary-white-color;
+    }
+  }
+  &:hover {
+    color: $primary-white-color;
+    background-color: $primary-peach-color;
+  }
+}
+// WEB-FEATURES END
+// WEB LINK START
+
+.pages-link__container {
+  display: flex;
+  gap: 3rem;
+}
+
+.pages-lnka {
+  color: $primary-white-color;
+  border-radius: 1.5rem;
+  background-image: url(../../images/features-img2.png);
+  background-repeat: no-repeat;
+  width: 541px;
+  text-align: center;
+  padding: 10rem 0;
+  transition: 0.3s ease;
+  &:hover {
+    background-image: url(../../images/svg/pages-link-mask.svg),
+      url(../../images/features-img2.png);
+  }
+  p {
+    color: $primary-white-color;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+}
+
+.pages-lnkb {
+  color: $primary-white-color;
+  border-radius: 1.5rem;
+  background-image: url(../../images/features-img3.png);
+  background-repeat: no-repeat;
+  width: 541px;
+  text-align: center;
+  padding: 10rem 0;
+  transition: 0.3s ease;
+  &:hover {
+    background-image: url(../../images/svg/pages-link-mask.svg),
+      url(../../images/features-img3.png);
+  }
+  p {
+    color: $primary-white-color;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+}
+
+// WEB LINK END
