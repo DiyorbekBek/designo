@@ -1,4 +1,7 @@
 // hero start
+.about-tablet-img {
+  display: none;
+}
 .about-hero {
   padding-bottom: 16rem;
 }
@@ -26,11 +29,15 @@
   }
 }
 .about-hero-img {
+  display: block;
   position: inherit;
   right: -5rem;
 }
 // hero end
 // features start
+.about-feature-big-img {
+  display: none;
+}
 .about-features {
   padding-bottom: 16rem;
 }
@@ -81,7 +88,9 @@
 // STATE LINKS END
 
 // BG START
-
+.big-bg-img {
+  display: none;
+}
 .about-bg {
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -114,3 +123,99 @@
 }
 
 // BG END
+
+// MEDIA START
+@media screen and (max-width: 768px) {
+  .about-hero-img {
+    display: none;
+  }
+  .about-hero-container {
+    width: 654px;
+    height: 632px;
+    flex-direction: column-reverse;
+  }
+  .about-hero-content {
+    position: inherit;
+    top: 56px;
+
+    h2 {
+      text-align: center;
+      font-size: 4.8rem;
+    }
+    p {
+      text-align: center;
+    }
+  }
+  .about-tablet-img {
+    display: block;
+    position: absolute;
+    bottom: 340px;
+    right: 0;
+    width: 654px;
+    height: 300px;
+  }
+  // FEATURES START
+  .about-features-container {
+    width: 654px;
+    height: 736px;
+    flex-direction: column;
+  }
+  .about-features-img {
+    display: none;
+  }
+  .about-feature-big-img {
+    display: block;
+    width: 654px;
+    position: inherit;
+    right: 50px;
+  }
+  .about-features-contant {
+    text-align: center;
+    position: inherit;
+    top: -8rem;
+  }
+  // FEATURES END
+  // STATE LINKS
+  .about-state-links__container {
+    width: 654px;
+  }
+  .about-states-links__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  // STATE LINKS END
+  // BG START
+  .big-bg-img {
+    display: block;
+    position: inherit;
+    bottom: -7.4rem;
+    right: 5rem;
+    width: 654px;
+    height: 300px;
+  }
+
+  .about-bg-container {
+    width: 654px;
+    height: 736px;
+    flex-direction: column-reverse;
+  }
+
+  .about-bg-contant {
+    text-align: center;
+    position: inherit;
+    top: 50px;
+  }
+  .about-bg-img {
+    display: none;
+  }
+  // BG END
+}
+
+@media screen and (max-width: 375px) {
+  .about-state-links__container {
+    width: 350px;
+  }
+}
+
+// MEDIA END

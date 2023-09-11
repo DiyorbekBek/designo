@@ -122,3 +122,174 @@
 }
 
 // WEB LINK END
+
+// MEDIA START
+
+@media screen and (max-width: 768px) {
+  .web-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .web-item {
+    display: flex;
+  }
+  .web-item-link {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 15px;
+    padding-right: 10rem;
+    padding-left: 6rem;
+    h3 {
+      margin-left: 7.2rem;
+      margin-top: 6rem;
+      margin-bottom: 1.4rem;
+    }
+    p {
+      width: 276px;
+    }
+  }
+  .web-item-img {
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0;
+    width: 339px;
+    height: 310px;
+  }
+
+  .pages-link__container {
+    flex-direction: column;
+    width: 100%;
+    max-width: 768px;
+  }
+  .pages-lnka {
+    width: 687px;
+    background-image: url(../../images/features-img2.png),
+      url(../../images/Mask-Copy.png);
+    background-repeat: round;
+    padding: 8rem 6rem;
+  }
+  .pages-lnkb {
+    width: 687px;
+    background-image: url(../../images/features-img3.png);
+    background-repeat: round;
+    padding: 8rem 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .bg-top-container {
+    border-radius: 0;
+  }
+  .bg-top-content {
+    h1 {
+      font-size: 3.2rem;
+    }
+    p {
+      width: 277px;
+      font-size: 1.5rem;
+    }
+  }
+  .web-features__container {
+    width: 375px;
+  }
+
+  .web-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: relative;
+  }
+
+  .web-item {
+    width: 350px;
+    flex-direction: column;
+    position: inherit;
+    left: -4.1rem;
+  }
+
+  .web-item-link {
+    width: 100%;
+    max-width: 339px;
+    padding-top: 1rem;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    align-items: center;
+    h3 {
+      margin-top: 4rem;
+    }
+    p {
+      color: $primary-black-color;
+      &:hover {
+        color: $primary-white-color;
+      }
+    }
+    &:hover {
+      color: $primary-white-color;
+      background-color: $primary-peach-color;
+    }
+  }
+  .web-item-img {
+    border-bottom-left-radius: 0;
+  }
+
+  .pages-link {
+    position: relative;
+  }
+
+  .pages-link__container {
+    position: inherit;
+    left: -4.6rem;
+    width: 375px;
+    display: flex;
+    gap: 3rem;
+  }
+
+  .pages-lnka {
+    color: $primary-white-color;
+    border-radius: 1.5rem;
+    background-image: url(../../images/features-img2.png);
+    background-repeat: no-repeat;
+    width: 349px;
+    text-align: center;
+    padding: 10rem 0;
+    transition: 0.3s ease;
+    &:hover {
+      background-image: url(../../images/svg/pages-link-mask.svg),
+        url(../../images/features-img2.png);
+    }
+    p {
+      color: $primary-white-color;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+    }
+  }
+
+  .pages-lnkb {
+    color: $primary-white-color;
+    border-radius: 1.5rem;
+    background-image: url(../../images/features-img3.png);
+    background-repeat: no-repeat;
+    width: 349px;
+    text-align: center;
+    padding: 10rem 0;
+    transition: 0.3s ease;
+    &:hover {
+      background-image: url(../../images/svg/pages-link-mask.svg),
+        url(../../images/features-img3.png);
+    }
+    p {
+      color: $primary-white-color;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+    }
+  }
+}
+// MEDIA END

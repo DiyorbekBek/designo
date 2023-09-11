@@ -31,3 +31,22 @@
     text-decoration: underline;
   }
 }
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .header-container {
+    width: 100%;
+    max-width: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sitenav {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+}

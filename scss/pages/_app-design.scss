@@ -63,3 +63,48 @@
 }
 
 // App Features end
+
+// MEADIA START
+@media screen and (max-width: 768px) {
+  .container {
+  }
+  .app-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .app-item {
+    display: flex;
+  }
+  .web-item-img {
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0;
+    width: 339px;
+    height: 310px;
+  }
+  .app-item-link {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 15px;
+    padding-right: 10rem;
+    padding-left: 6rem;
+    h3 {
+      margin-left: 7.2rem;
+      margin-top: 6rem;
+      margin-bottom: 1.4rem;
+    }
+    p {
+      width: 276px;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .app-list {
+    position: relative;
+  }
+  .app-item {
+    flex-direction: column;
+    position: inherit;
+    left: -3.1rem;
+  }
+}
+// MEADIA END
